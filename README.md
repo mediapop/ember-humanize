@@ -1,7 +1,9 @@
 ember-humanize
 ==============================================================================
+*This ember addon is maintained by [Media Pop](https://www.mediapop.co), a software consultancy. Hire us to solve your web application challenges.*
 
-[Short description of the addon.]
+
+An ember service wrapper for [https://github.com/HubSpot/humanize](https://github.com/HubSpot/humanize)
 
 Installation
 ------------------------------------------------------------------------------
@@ -14,15 +16,32 @@ ember install ember-humanize
 Usage
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+#### As a service
 
+use it in any container
+```js
+import Component from '@ember/component';
+import { inject as service } from '@ember/service';
+import { computed } from '@ember/object';
+
+export default Component.extend({
+  humanize: service(),
+  property: 123456789,
+  
+  transformedProperty: computed('humanize', 'property', function(){
+    return this.get('humanize').compactInteger(this.get('property'), 2);
+    //returns "123.46M"
+  }),  
+});
+
+```
 
 Contributing
 ------------------------------------------------------------------------------
 
 ### Installation
 
-* `git clone <repository-url>`
+* `git clone https://github.com/mediapop/ember-humanize`
 * `cd ember-humanize`
 * `npm install`
 
