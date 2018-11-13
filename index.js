@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-humanize',
+  name: require('./package').name,
 
   importTransforms: require('ember-cli-cjs-transform').importTransforms,
 
