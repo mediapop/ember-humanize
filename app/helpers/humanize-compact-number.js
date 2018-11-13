@@ -1,1 +1,1 @@
-export { default, humanizeCompactNumber } from 'ember-humanize/helpers/humanize-compact-number';
+export { default, humanizeCompactNumberc } from '@mediapop/ember-humanize/helpers/humanize-compact-number';

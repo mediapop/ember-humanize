@@ -1,1 +1,1 @@
-export { default, humanizeOrdinalNumber } from 'ember-humanize/helpers/humanize-ordinal-number';
+export { default, humanizeOrdinalNumber } from '@mediapop/ember-humanize/helpers/humanize-ordinal-number';
