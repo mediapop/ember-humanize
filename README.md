@@ -3,7 +3,7 @@ ember-humanize
 *This ember addon is maintained by [Media Pop](https://www.mediapop.co), a software consultancy. Hire us to solve your web application challenges.*
 
 
-An ember service wrapper for [https://github.com/HubSpot/humanize](https://github.com/HubSpot/humanize)
+An ember helper wrapper for [humanize](https://github.com/HubSpot/humanize)'s most useful functions that are unavailable in vanilla JS and native Ember.js
 
 Installation
 ------------------------------------------------------------------------------
@@ -16,24 +16,36 @@ ember install ember-humanize
 Usage
 ------------------------------------------------------------------------------
 
-#### As a service
+Use in any template.  You can also customise the display using the optional named parameters.
 
-use it in any container
-```js
-import Component from '@ember/component';
-import { inject as service } from '@ember/service';
-import { computed } from '@ember/object';
+**humanize-compact-number**
 
-export default Component.extend({
-  humanize: service(),
-  property: 123456789,
-  
-  transformedProperty: computed('humanize', 'property', function(){
-    return this.get('humanize').compactInteger(this.get('property'), 2);
-    //returns "123.46M"
-  }),  
-});
+Shortens the number to well known abbreviations.
+```hbs
+{{humanize-compact-number 123456789}}
+//123M
 
+{{humanize-compact-number 123456789 decimals=2}}
+//123.46M
+```
+
+**humanize-number**
+
+similar to JS's `toLocaleString()` but with custom control over thousands and decimal seperators
+```hbs
+{{humanize-number 10000000}}
+//10,000,000
+
+{{humanize-number 10000000 precision=2 thousand=' ' decimal=','}}
+//10 000 000,000
+```
+
+**humanize-ordinal-number**
+
+expresses numbers in their ordinal form
+```hbs
+{{humanize-ordinal-number 1332}}
+//1332nd
 ```
 
 Contributing

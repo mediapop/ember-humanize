@@ -1,9 +1,24 @@
 <div>
-  humanize-compact-number helper: {{humanize-compact-number 1000000}}
+  <h1>humanize-compact-number</h1>
+  <h3>No optionals</h3>
+  <code>\{{humanize-compact-number 123456789}}</code>
+  <div>result: {{humanize-compact-number 123456789}}</div>
+  <h3>With optionals</h3>
+  <code>\{{humanize-compact-number 123456789 decimals=2}}</code>
+  <div>result: {{humanize-compact-number 123456789 decimals=2}}</div>
 </div>
 <div>
-  humanize-number helper: {{humanize-number 1000000}}
+  <h1>humanize-number</h1>
+  <h3>No optionals</h3>
+  <code>\{{humanize-number 10000000}}</code>
+  <div>{{humanize-number 10000000}}</div>
+  <h3>With optionals</h3>
+  <code>\{{humanize-number 10000000 precision=3 thousand=' ' decimal=','}}</code>
+  <div>{{humanize-number 10000000 precision=3 thousand=' ' decimal=','}}
+</div>
 </div>
 <div>
-  humanize-ordinal-number helper: {{humanize-ordinal-number 1332}}
+  <h1>humanize-ordinal-number</h1>
+  <code>\{{humanize-ordinal-number 1332}}</code>
+  <div>{{humanize-ordinal-number 1332}}</div>
 </div>
