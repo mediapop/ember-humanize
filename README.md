@@ -1,7 +1,7 @@
 ember-humanize
 ==============================================================================
 *This ember addon is maintained by [Media Pop](https://www.mediapop.co), a software consultancy. Hire us to solve your web application challenges.*
-[![Build Status](https://travis-ci.org/mediapop/ember-humanize.svg?branch=master)](https://travis-ci.org/mediapop/ember-viewport)
+[![Build Status](https://travis-ci.org/mediapop/ember-humanize.svg?branch=master)](https://travis-ci.org/mediapop/ember-humanize)
 
 
 An ember helper wrapper for [humanize](https://github.com/HubSpot/humanize)'s most useful functions that are unavailable in vanilla JS and native Ember.js
