@@ -9,7 +9,7 @@ Installation
 ------------------------------------------------------------------------------
 
 ```
-ember install ember-humanize
+ember install @mediapop/ember-humanize
 ```
 
 
