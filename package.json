@@ -1,6 +1,6 @@
 {
   "name": "@mediapop/ember-humanize",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [
     "ember-addon",
