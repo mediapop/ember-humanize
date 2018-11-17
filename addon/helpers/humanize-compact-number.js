@@ -1,5 +1,5 @@
 import {helper} from '@ember/component/helper';
-import Humanize from "humanize";
+import Humanize from 'humanize';
 
 export function humanizeCompactNumber(params, namedArgs) {
   let [input] = params;
